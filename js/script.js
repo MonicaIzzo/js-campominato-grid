@@ -35,9 +35,22 @@ console.log ('JS OK');
 
 // #1 Svuotamento 
 
+// OPERAZIONI INIZIALI
+
 // #2 Recupero dal DOM gli elementi dalla pagina
 
+const grid = document.getElementById('grid');
+
 // #3 Setto delle variabili di comodo
+const rows = 10;
+const cols = 10;
+const totalCells = rows * cols;
+
+for (let i = 0; i < totalCells; i++) {
+ const square = document.createElement('div');
+ square.className = ('square');
+ grid.appendChild(square);
+}
 
 // #3bis Funzioni?
 

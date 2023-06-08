@@ -76,6 +76,7 @@ button:hover {
     height: 100px;
     margin: 0;
     line-height: 96px;
+    cursor: pointer;
 }
 
 .square.hover {
