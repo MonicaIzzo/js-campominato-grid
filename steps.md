@@ -31,14 +31,15 @@ Le validazioni e i controlli possiamo farli anche in un secondo momento.
 <br>
 <br>
  
-- **1**
-  - 
-- **2**
-  - 
-- **3**
-  - 
-- **4**
-
+- **1** Struttura HTML.
+  - Mi prepraro la sruttura del HTML + CSS.
+- **2** Svutamento del HTML.
+  - Elimino dalla pafina gli elementi "generati" tramite JS.
+- **3** Recupero dal DOM gli elementi dalla pagina.
+  -  tramite "getElement" con [id, class o tag] .
+- **4** Setto delle variafili di comodo.
+- **5** applico al Bottone [Aggiorna] il compito di generare tramite un ciclo le 100 caselle
+- **6** Creo tramite un "event" uno script che ascolti il [click] del bottone. All' event applico la classe [background-color] al bottone e stampo in console la variabile [i] (contatore che mi ha generato le celle).
 **FINE** 
 
 
