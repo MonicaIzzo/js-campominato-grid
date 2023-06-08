@@ -10,31 +10,61 @@
     box-sizing: border-box;
 }
 
-/* Custom PROPERTIES */
-:root {
-    --title-color: #e53170;
-    --link-color: #00abe9;
-}
-
-
-
-
-/* Generics */
-body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-img {
-    display: block;
-    max-width: 100%;
+/********************************************
+    UTILITIES
+********************************************/
+.debug {
+    border: 2px dotted red;
 }
 
 
 /********************************************
-    UTILITIES
+    LAYOUT
 ********************************************/
+#header {
+    height: 80px;
+}
 
-/* Layout */
+#logo {
+    display: inline;
+    line-height: 80px;
+    vertical-align: middle;
+}
+
+h1 {
+    display: inline;
+    line-height: 80px;
+    vertical-align: middle;
+}
+
+button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#grid {
+    width: 1000px;
+    padding: 0;
+}
+
+
+.square {
+    display: inline-block;
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    line-height: 96px;
+}
 
 /* Text */
 

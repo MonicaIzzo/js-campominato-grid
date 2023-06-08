@@ -29,8 +29,9 @@ Al click sulla cella, stampiamo il numero della cella cliccata in console, poi c
 
 console.log ('JS OK');
 
-// #0 Mi prepraro la sruttura del HTML + CSS.
+// FUNZIONI
 
+// #0 Mi prepraro la sruttura del HTML + CSS.
 
 // #1 Svuotamento 
 
