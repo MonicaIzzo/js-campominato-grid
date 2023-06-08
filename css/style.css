@@ -60,6 +60,10 @@ button:hover {
     padding: 0;
 }
 
+.col {
+    margin: 0;
+    }
+
 
 .square {
     display: inline-block;
@@ -74,7 +78,7 @@ button:hover {
     line-height: 96px;
 }
 
-.square:hover {
+.square.hover {
     background-color: aqua;
 }
 /* Text */
