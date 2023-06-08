@@ -15,22 +15,31 @@ In ogni cella, deve comparire il numero corrispondente, in ordine da 1 a 100;
 Al click sulla cella, stampiamo il numero della cella cliccata in console, poi coloriamo la cella d'azzurro!
 */
 
+// #0 Struttura HTML: Mi prepraro la sruttura del HTML + CSS.
+// #1 Svuotamento del HTML Elimino dalla pagina gli elementi che saranno "generati" tramite JS.
+// #2 Recupero dal DOM gli elementi dalla pagina tramite "getElement" con [id, class o tag].
+// #3  Setto delle variabili di comodo per gli elementi che dovrò manipolare.
+// #3bis  Posso crearmi o utilizzare anche delle funzioni?
+// #4 applico al Bottone [Crea] il compito di generare tramite un ciclo [credo un "for"] le 100 caselle
+// #5 Creo tramite un "event" lo script che ascolta il [click] del bottone. All' event applico la classe [background-color] al bottone e stampo in console la variabile [i] (contatore che mi ha generato le celle).
+// FINE
+// #6bis Tramite il CSS si potrebbe cambire al width e la height [penso tramite l'assegnazione di una classe diversa in JS] e una [select] - [difficoltà] che cambi le variabili da passare al ciclo [for] per generare i quadrati. [ipotesi]
+// #7bis un tasto [aggiorna] potrebbe far ripartie il ciclo [crea celle] oppure un altro modo e settare sulle [class] la classe [d-none] o soluzione ancora più semplice "svuotare il DIV" che contiene le celle sovrascivendo il contenuto con [''] [ipotesi]
 
-// #0 
-// #1 
-// #2 
-// #3 
-// #4 
 
 console.log ('JS OK');
 
-// #0
+// #0 Mi prepraro la sruttura del HTML + CSS.
 
 
-// #1 
+// #1 Svuotamento 
 
-// #2 
+// #2 Recupero dal DOM gli elementi dalla pagina
 
-// #3
+// #3 Setto delle variabili di comodo
 
-// #4
+// #3bis Funzioni?
+
+// #4 Bottone [Crea]
+
+// #5 Ascolto il Bottone [Crea]
