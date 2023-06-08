@@ -74,6 +74,9 @@ button:hover {
     line-height: 96px;
 }
 
+.square:hover {
+    background-color: aqua;
+}
 /* Text */
 
 /* Border */
