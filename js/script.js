@@ -18,9 +18,9 @@ Al click sulla cella, stampiamo il numero della cella cliccata in console, poi c
 // #0 Struttura HTML: Mi prepraro la sruttura del HTML + CSS.
 // #1 Svuotamento del HTML Elimino dalla pagina gli elementi che saranno "generati" tramite JS.
 // #2 Recupero dal DOM gli elementi dalla pagina tramite "getElement" con [id, class o tag].
-// #3  Setto delle variabili di comodo per gli elementi che dovrò manipolare.
+// #3  Setto delle variabili di comodo per gli elementi che dovrò manipolare e creo i SQUARE.
 // #3bis  Posso crearmi o utilizzare anche delle funzioni?
-// #4 applico al Bottone [Crea] il compito di generare tramite un ciclo [credo un "for"] le 100 caselle
+// #4 applico al Bottone [Crea] il compito di generare tramite un ciclo [credo un "for"] le 100 caselle.
 // #5 Creo tramite un "event" lo script che ascolta il [click] del bottone. All' event applico la classe [background-color] al bottone e stampo in console la variabile [i] (contatore che mi ha generato le celle).
 // FINE
 // #6bis Tramite il CSS si potrebbe cambire al width e la height [penso tramite l'assegnazione di una classe diversa in JS] e una [select] - [difficoltà] che cambi le variabili da passare al ciclo [for] per generare i quadrati. [ipotesi]
@@ -29,7 +29,13 @@ Al click sulla cella, stampiamo il numero della cella cliccata in console, poi c
 
 console.log ('JS OK');
 
-// FUNZIONI
+// FUNZIONI (#3bis)
+const createSquare = () => {
+ const square = document.createElement('div');
+ square.className = 'square';
+
+ return square;
+}
 
 // #0 Mi prepraro la sruttura del HTML + CSS.
 
@@ -39,20 +45,30 @@ console.log ('JS OK');
 
 // #2 Recupero dal DOM gli elementi dalla pagina
 
-const grid = document.getElementById('grid');
 
-// #3 Setto delle variabili di comodo
+const grid = document.getElementById('grid');
+const button = document.getElementsByTagName('button');
+
+
+// #3 Setto delle variabili di comodo e mi creo le SQUARE
+// #4 applico al Bottone [Crea] il compito di generare i square.
 const rows = 10;
 const cols = 10;
 const totalCells = rows * cols;
 
 for (let i = 0; i < totalCells; i++) {
- const square = document.createElement('div');
- square.className = ('square');
- grid.appendChild(square);
+    const square = createSquare();
+
+    square.addEventListener('click', function () {
+        square.classList.add('hover')
+    });
+    grid.appendChild(square);
 }
 
-// #3bis Funzioni?
+
+
+
+
 
 // #4 Bottone [Crea]
 
