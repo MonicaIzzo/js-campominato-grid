@@ -58,6 +58,7 @@ const totalCells = rows * cols;
 
 for (let i = 0; i < totalCells; i++) {
     const square = createSquare();
+    square.innerText = i + 1;
 
     square.addEventListener('click', function () {
         square.classList.add('hover')
