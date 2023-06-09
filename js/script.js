@@ -61,16 +61,12 @@ for (let i = 0; i < totalCells; i++) {
     square.innerText = i + 1;
 
     square.addEventListener('click', function () {
-        square.classList.add('hover')
+        square.classList.add('hover');
+        console.log(i);
     });
     grid.appendChild(square);
 }
 
 
-
-
-
-
-// #4 Bottone [Crea]
 
 // #5 Ascolto il Bottone [Crea]
