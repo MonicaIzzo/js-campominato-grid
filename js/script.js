@@ -67,7 +67,7 @@ const totalCells = rows * cols;
 
     square.addEventListener('click', function () {
         square.classList.add('hover');
-        console.log(i);
+        console.log(++i);
     });
     grid.appendChild(square);
     };
