@@ -44,19 +44,24 @@ const createSquare = () => {
 // OPERAZIONI INIZIALI
 
 // #2 Recupero dal DOM gli elementi dalla pagina
-
-
 const grid = document.getElementById('grid');
-const button = document.getElementsByTagName('button');
+const playGame = document.getElementById('playGame');
 
 
 // #3 Setto delle variabili di comodo e mi creo le SQUARE
-// #4 applico al Bottone [Crea] il compito di generare i square.
+
 const rows = 10;
 const cols = 10;
 const totalCells = rows * cols;
 
-for (let i = 0; i < totalCells; i++) {
+// #4 applico al Bottone [Crea] il compito di generare i square.
+
+   playGame.addEventListener('click', function (){
+    // cambio in ricomincia
+    playGame.innerText = 'Ricomincia';
+    grid.innerText = '';
+
+    for (let i = 0; i < totalCells; i++) {
     const square = createSquare();
     square.innerText = i + 1;
 
@@ -65,7 +70,22 @@ for (let i = 0; i < totalCells; i++) {
         console.log(i);
     });
     grid.appendChild(square);
-}
+    };
+
+});
+
+
+
+    
+
+
+
+    
+
+
+
+
+
 
 
 
