@@ -72,13 +72,40 @@ button:hover {
     text-align: center;
     font-size: 24px;
     font-weight: 700;
-    width: 80px;
-    height: 80px;
     margin: 0;
-    line-height: 76px;
     cursor: pointer;
 }
 
-.square.hover {
+.square.easy.hover {
     background-color: aqua;
+    
 }
+
+.square.normal.hover {
+    background-color: aqua;
+    
+}
+
+.square.hard.hover {
+    background-color: aqua;
+    
+}
+
+.square.easy {
+    width: calc(800px / 10);
+    height: calc(800px / 10);
+    line-height: 76px;
+}
+
+.square.normal {
+    width: calc(800px / 9);
+    height: calc(800px / 9);
+    line-height: 86px;
+}
+
+.square.hard {
+    width: calc(800px / 7);
+    height: calc(800px / 7);
+    line-height: 106px;
+}
+
