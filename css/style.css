@@ -4,88 +4,102 @@
 
 /* Reset CSS */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /********************************************
     UTILITIES
 ********************************************/
+
 .debug {
-  border: 2px dotted red;
+    border: 2px dotted red;
 }
 
 /********************************************
     LAYOUT
 ********************************************/
 #header {
-  height: 80px;
+    height: 80px;
 }
+
 #logo {
-  display: inline;
-  line-height: 80px;
-  vertical-align: middle;
+    display: inline;
+    line-height: 80px;
+    vertical-align: middle;
 }
+
 h1 {
-  display: inline;
-  line-height: 80px;
-  vertical-align: middle;
+    display: inline;
+    line-height: 80px;
+    vertical-align: middle;
 }
+
 button {
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  transition-duration: 0.4s;
-  border: 2px solid #418458;
-  background-color: #418458;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    border: 2px solid #418458;
+    background-color: #418458;
 }
+
 button:hover {
-  background-color: white;
-  border: 2px solid #418458;
-  color: #418458;
+    background-color: white;
+    border: 2px solid #418458;
+    color: #418458;
 }
+
 #grid {
-  width: 800px;
-  padding: 0;
+    width: 800px;
+    padding: 0;
 }
+
 .col {
-  margin: 0;
+    margin: 0;
 }
+
 .square {
-  display: inline-block;
-  border: 2px solid white;
-  color: white;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 700;
-  margin: 0;
-  cursor: pointer;
+    display: inline-block;
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    cursor: pointer;
 }
+
 .square.easy.hover {
-  background-color: aqua;
+    background-color: aqua;
 }
+
 .square.normal.hover {
-  background-color: aqua;
+    background-color: aqua;
 }
+
 .square.hard.hover {
-  background-color: aqua;
+    background-color: aqua;
 }
+
 .square.easy {
-  width: calc(800px / 10);
-  height: calc(800px / 10);
-  line-height: 76px;
+    width: calc(800px / 10);
+    height: calc(800px / 10);
+    line-height: 76px;
 }
+
 .square.normal {
-  width: calc(800px / 9);
-  height: calc(800px / 9);
-  line-height: 86px;
+    width: calc(800px / 9);
+    height: calc(800px / 9);
+    line-height: 86px;
 }
+
 .square.hard {
-  width: calc(800px / 7);
-  height: calc(800px / 7);
-  line-height: 106px;
+    width: calc(800px / 7);
+    height: calc(800px / 7);
+    line-height: 106px;
 }

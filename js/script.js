@@ -15,90 +15,96 @@ In ogni cella, deve comparire il numero corrispondente, in ordine da 1 a 100;
 Al click sulla cella, stampiamo il numero della cella cliccata in console, poi coloriamo la cella d'azzurro!
 */
 
-console.log("JS OK");
 
-// FUNZIONI
-function startGame() {
-  // cambio in ricomincia
-  playGame.innerText = "Ricomincia";
-  grid.innerHTML = "";
+console.log ('JS OK');
 
-  const level = levelSelect.value;
+/*----------------------------------------------
+        FUNZIONI
+-----------------------------------------------*/       
 
-  let rows;
-  let cols;
+function startGame () {
+// cambio in ricomincia
+    playGame.innerText =
+     'Ricomincia';
+    grid.innerHTML = '';
+    
+    const level =levelSelect.value;
 
-  switch (level) {
-    case "hard":
-      rows = 7;
-      cols = 7;
-      break;
-    case "normal":
-      rows = 9;
-      cols = 9;
-      break;
-    case "easy":
-    default:
-      rows = 10;
-      cols = 10;
-  }
+    let rows;
+    let cols;
 
-  let totalCells = rows * cols;
+    switch(level) {
+        case 'hard' :
+        rows = 7;
+        cols = 7;
+        break;
+        case 'normal' :
+        rows = 9;
+        cols = 9;
+        break;
+        case 'easy' :
+        default:
+        rows = 10;
+        cols = 10; 
+    }
 
-  for (let i = 0; i < totalCells; i++) {
+    let totalCells = rows * cols;
+
+    for (let i = 0; i < totalCells; i++) {
     const square = createSquare();
     square.innerText = i + 1;
     square.classList.add(level);
     console.log(level);
 
-    square.addEventListener("click", function () {
-      square.classList.add("hover");
-
-      console.log(++i);
+    square.addEventListener('click', function () {
+        square.classList.add('hover');
+        
+        console.log(++i);
+        
     });
     grid.appendChild(square);
-  }
+    };
 }
 
 const createSquare = () => {
-  const square = document.createElement("div");
-  square.classList.add("square");
+const square = document.createElement('div');
+square.classList.add('square');
 
-  return square;
-};
+ return square;
+}
 
 // #0 Mi prepraro la sruttura del HTML + CSS.
-
 // #1 Svuotamento
 
-// OPERAZIONI INIZIALI
+/*----------------------------------------------
+        OPERAZIONI INIZIALI
+----------------------------------------------*/
 
 // #2 Recupero dal DOM gli elementi dalla pagina
-const grid = document.getElementById("grid");
-const playGame = document.getElementById("playGame");
-const levelSelect = document.getElementById("livello");
-console.log(levelSelect);
+const grid = document.getElementById('grid');
+const playGame = document.getElementById('playGame');
+const levelSelect = document.getElementById('livello');
+console.log(levelSelect)
 
 // #3 Setto delle variabili di comodo e mi creo le SQUARE
-
 let rows;
 let cols;
 
 let level;
 
-if ((level = "easy")) {
-  rows = 10;
-  cols = 10;
-} else if ((level = "normal")) {
-  rows = 9;
-  cols = 9;
+if (level = 'easy') {
+    rows = 10;
+    cols = 10;
+} else if (level = 'normal') {
+    rows = 9;
+    cols = 9;
 } else {
-  rows = 7;
-  cols = 7;
+    rows = 7;
+    cols = 7;
 }
 
 totalCells = rows * cols;
 console.log(totalCells);
 
 // #4 applico al Bottone [Crea] il compito di generare i square.
-playGame.addEventListener("click", startGame);
+   playGame.addEventListener('click', startGame);
