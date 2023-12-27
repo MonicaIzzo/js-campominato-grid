@@ -57,7 +57,7 @@ function startGame () {
     console.log(level);
 
     square.addEventListener('click', function () {
-        square.classList.add('hover');
+        square.classList.toggle('hover');
         
         console.log(++i);
         
